@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <!--Busque su emoji en https://www.w3schools.com/html/html_emojis.asp-->
+        <title> 🪩¡Segunda clase!</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+        <link rel= "stylesheet" href = "style.css">
+        <style>
+       
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>
+                <a href="index.html" class= "activo">Bienvenide</a>
+                <a href="page.html">Dibuje</a>
+            </p>
+            <h1></h1>
+            <h2></h2>
+            <p>Tomé este curso porque La verdad el horario me venía rebien porque me cargan los ramos a las 8:30, el metro está muy lleno. Además suena chori aprender a programar es como más intelectual no sé, no quiero dar explicaciones profundas.</p>
+                     
+        </header>
+        <main>
+        </main>
+        <aside>
+       
+        </aside>
+        <script>
+            var saludo = {
+                arriba:["¡Hola mundo!","¡Hola pipol!", "¡Hola gente!", "¡Hola amores!"],
+            abajo: "Mi nombre es Angela Fernández",
+        };
+            var titular;
+            var nombre;
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+                //selecciona un par de colores en https://materialui.co/colors
+                background('#1565C0');
+                stroke('#FFF59D');
+                titular = select('h1');
+                titular.html(random(saludo.arriba));
+                nombre = select('h2');
+                nombre.html(saludo.abajo);
+            }
+            /*Para que se ponga de manera random algo del arreglo, cuando se da la indicación se debe poner (random)*/
+            
+            
+            function draw() {
+                background('#1565C0');
+                textSize(48);
+                text("🪩",mouseX,mouseY);
+            }
+            
+
+
+        </script>
+    </body>
+</html>
